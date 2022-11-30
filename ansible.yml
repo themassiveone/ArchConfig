@@ -1,0 +1,8 @@
+---
+- name: iso config
+  hosts: localhost
+  tasks:
+    - name: remove nano (test)
+      pacman:
+        name: nano
+        state: absent
